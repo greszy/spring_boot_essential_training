@@ -1,0 +1,15 @@
+#This is where you can load various configuration properties for your application,
+#that you want to be stored in the application itself, as opposed to injected via environment variables.
+
+#This file used to be an application.properties file. It has been refactored to become a yaml file to test some profile configurations.
+#In this example different profiles have different server ports configured. If a profile is not set, Spring Boot will default to 8080.
+
+spring:
+  profiles: dev
+server:
+  port: 8000
+---
+spring:
+  profiles: test
+server:
+  port: 9000
