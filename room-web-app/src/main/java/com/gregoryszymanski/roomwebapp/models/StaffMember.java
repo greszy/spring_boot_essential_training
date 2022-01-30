@@ -1,15 +1,27 @@
 package com.gregoryszymanski.roomwebapp.models;
 
+import javax.persistence.*;
+import java.util.UUID;
+
+@Entity
+@Table(name = "Employee")
 public class StaffMember {
+    @Id
+    @Column(name="EMPLOYEE_ID")
     private String employeeId;
+    @Column(name="FIRST_NAME")
     private String firstName;
+    @Column(name="LAST_NAME")
     private String lastName;
-    private String position;
+    @Column(name="POSITION")
+    @Enumerated(EnumType.STRING)
+    private Position position;
 
     public StaffMember() {
+        this.employeeId = UUID.randomUUID().toString();
     }
 
-    public StaffMember(String employeeId, String firstName, String lastName, String position) {
+    public StaffMember(String employeeId, String firstName, String lastName, Position position) {
         this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -28,7 +40,7 @@ public class StaffMember {
         this.lastName = lastName;
     }
 
-    public void setPosition(String position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 
@@ -42,7 +54,7 @@ public class StaffMember {
         return lastName;
     }
 
-    public String getPosition() {
+    public Position getPosition() {
         return position;
     }
 }

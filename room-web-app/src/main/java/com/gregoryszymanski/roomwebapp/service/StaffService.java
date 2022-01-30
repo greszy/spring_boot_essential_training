@@ -1,5 +1,6 @@
 package com.gregoryszymanski.roomwebapp.service;
 
+import com.gregoryszymanski.roomwebapp.data.StaffRepository;
 import com.gregoryszymanski.roomwebapp.models.Position;
 import com.gregoryszymanski.roomwebapp.models.StaffMember;
 import org.springframework.stereotype.Service;
@@ -11,16 +12,13 @@ import java.util.UUID;
 @Service
 public class StaffService {
 
-    private static final List<StaffMember> staff = new ArrayList<>();
+    private final StaffRepository staffRepository;
 
-    static {
-        staff.add(new StaffMember(UUID.randomUUID().toString(),"Gregory", "Szymanski", Position.CONCIERGE.toString()));
-        staff.add(new StaffMember(UUID.randomUUID().toString(),"Tom", "Fox", Position.SECURITY.toString()));
-        staff.add(new StaffMember(UUID.randomUUID().toString(),"Jane", "Fox", Position.FRONT_DESK.toString()));
-        staff.add(new StaffMember(UUID.randomUUID().toString(),"Peter", "Slick", Position.HOUSEKEEPING.toString()));
+    public StaffService(StaffRepository staffRepository) {
+        this.staffRepository = staffRepository;
     }
 
     public List<StaffMember> getAllStaff() {
-        return staff;
+        return staffRepository.findAll();
     }
 }
