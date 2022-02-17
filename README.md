@@ -41,10 +41,23 @@ Below are the topics that I have learned from following the Spring Boot 2.0 Esse
 * Spring Boot Actuators
   * What the Actuator allows to monitor?
 
-## Video Walkthroughs
+## Video Examples
 
-TBD
+Below you can see examples of demos of some features that are possible to implement in Spring Boot, that were covered in the course.
+The videos cover the implementation of authentication with Spring Security, displaying rooms and staff data retrieved from a database and displaying it on a page,
+simple examples of a Spring producer sending a message to RabbitMQ and having a producer read that message from a queue and showing the result of Spring REST exposing raw data repositories as services.  
 
+### Spring Security and Spring Data - Adding Authentication, Displaying Data from a Database
+
+<img src='gifs/spring_data_example.gif' title='Spring Data Example' width='' alt='Spring Data Example' />
+
+### Spring Message Consumers and Producers
+
+<img src='gifs/amqp_example.gif' title='AMQP Example' width='' alt='AMQP Example' />
+
+### Spring Rest Endpoints
+
+<img src='gifs/spring_rest_example.gif' title='Spring REST Example' width='' alt='Spring REST Example' />
 ## Links
 
 This repository is based on the materials covered in:
