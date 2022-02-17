@@ -4,7 +4,6 @@ import com.gregoryszymanski.roomwebapp.data.RoomRepository;
 import com.gregoryszymanski.roomwebapp.models.Room;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
