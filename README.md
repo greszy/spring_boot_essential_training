@@ -58,6 +58,7 @@ simple examples of a Spring producer sending a message to RabbitMQ and having a 
 ### Spring Rest Endpoints
 
 <img src='gifs/spring_rest_example.gif' title='Spring REST Example' width='' alt='Spring REST Example' />
+
 ## Links
 
 This repository is based on the materials covered in:
