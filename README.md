@@ -39,7 +39,11 @@ Below are the topics that I have learned from following the Spring Boot 2.0 Esse
 * Spring Boot and Messageing Systems
   * How can producers and consumers be built for messaging systems using Spring Boot? 
 * Spring Boot Actuators
-  * What the Actuator allows to monitor? 
+  * What the Actuator allows to monitor?
+
+## Video Walkthroughs
+
+TBD
 
 ## Links
 
