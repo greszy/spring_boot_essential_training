@@ -55,7 +55,7 @@ simple examples of a Spring producer sending a message to RabbitMQ and having a 
 
 <img src='gifs/amqp_example.gif' title='AMQP Example' width='' alt='AMQP Example' />
 
-### Spring Rest Endpoints
+### Spring REST Endpoints
 
 <img src='gifs/spring_rest_example.gif' title='Spring REST Example' width='' alt='Spring REST Example' />
 
